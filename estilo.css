@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@700&family=Inconsolata:wght@200;800&family=Lato:wght@400;700&family=Nunito:ital,wght@0,200;1,200&family=Raleway:wght@400;600;700&display=swap');
+
+
+:root {
+    --background: rgb(144, 209, 211);
+    --primary: #759956;
+    --secondary: #315E93;
+    --tertiary: #FBFCFE;
+    --white: #FFFFFF;
+    --title: #102032;
+    --text: #80a738;
+    --conteiner: 1216px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    font-family: "Raleway", sans-serif;
+}
+
+header {
+    max-width: var(--conteiner);
+    margin: 0 auto;
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li:not(:first-child) {
+    margin-left: 24px;
+}
+
+nav ul a {
+    text-decoration: none;
+    display: block;
+}
+
+ul#redes li a img {
+    padding-left: 25px;
+    display: block;
+    max-width: 200%;
+    max-height: 200%;
+}
+
+ul#links a {
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--title);
+    text-transform: uppercase;
+    transition: 0.2s;
+    padding-right: 20px;
+}
+
+ul#links a:hover {
+    filter: opacity(0.8);
+}
+
+header h1 {
+    font-size: 30px;
+    border: 2px solid black;
+    width: 2000px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px red;
+    text-align: center;
+}
+
+section#inicio {
+    max-width: var(--conteiner);
+    margin: 0 auto;
+    height: calc(60vh - (40px + 29px)); /* altura do header menos altura da tela */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+section#inicio h1 {
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+section#inicio h1 span {
+    font-size: 75px;
+    color: var(--primary);
+    display: block;
+}
+
+section#inicio img {
+    width: 100px;
+
+    -webkit-mask-image: linear-gradient(to left, var(--background), transparent);
+    mask-image: linear-gradient(to left, var(--background), transparent);
+    
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+section#formação {
+    background-color: var(--tertiary);
+}
+
+section#formação div#conteudo-formacao {
+    max-width: var(--conteiner);
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+div#conteudo-formacao h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 95px;
+}
+
+div#conteudo-formacao li.formacao-item {
+    display: flex;
+
+    font-family: "Lato";
+}
+
+div#conteudo-formacao ul#lista-formacao img {
+    width: 100%;
+    height: 100%;
+}
+
+
+div#conteudo-formacao ul#lista-formacao {
+    flex-direction: column;
+    margin-top: 37px;
+}
+
+li.formacao-item:not(:first-child) {
+    margin-top: 45px;
+}
+
+li.formacao-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    margin-left: 24px;
+}
+
+li.formacao-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+li.formacao-item p.onde {
+    font-size:  16px;
+
+    color: var(--title);
+}
+
+li.formacao-item p.quando {
+    font-size: 14px;
+    color: var(--text);
+}
+
+section#habilidades {
+    background-color: var(--primary);
+}
+
+section#habilidades div#conteudo-habilidades {
+    max-width: var(--conteiner);
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+div#conteudo-habilidades h2 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 70px;
+}
+
+div#conteudo-habilidades h2 span {
+    font-size: 60px;
+    display: block;
+}
+
+div ul#tecnologias li {
+    width: 20%;
+    align-items: center;
+}
+
+div ul#tecnologias p {
+    margin-left: 80px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Lato";
+}
+
+div#cursos-recentes {
+    margin-top: 60px;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 25px;
+    line-height: 50px;
+    font-family: "Raleway";
+}
+
+section#publicacoes div#conteudo-publicacoes {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 80px 0;
+  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+  div#conteudo-publicacoes h2 {
+    margin-top: 25px;
+    color: var(--title);
+    font-size: 60px;
+    font-weight: bold;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  div#conteudo-publicacoes h2 span {
+    font-size: 45px;
+  }
+  
+  div#conteudo-publicacoes article.publicacao:not(:first-child) {
+    margin-top: 24px;
+  }
+  
+  div#conteudo-publicacoes article.publicacao:nth-child(2) {
+    margin-top: 40px;
+  }
+  
+  div#conteudo-publicacoes article.publicacao {
+    display: flex;
+    align-items: center;
+  
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 24px 26px;
+  
+    box-shadow: 0 28px 36px -16px rgba(0, 0, 0, 0.1);
+  }
+  
+  article.publicacao div {
+    margin-left: 24px;
+  }
+  
+  article.publicacao div h3 {
+    font-size: 24px;
+    color: var(--title)
+  }
+  
+  div#conteudo-publicacoes .publicacao a {
+    padding: 25px;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+section#cursando {
+    padding: 25px;
+    display: block;
+    line-height: 30px;
+    border: 30px;
+    background-color: #446d9c;
+    border-radius: 12.5px;
+}
+
+section#cursando h3 {
+    font-size: 25px;
+}
+
+section#cursando h4 {
+    font-size: 15px;
+}
+
+footer {
+    height: 80vh;
+    background-color: var(--primary);
+}
+  
+footer div#conteudo-footer {
+    max-width: var(--container);
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#conteudo-footer div#titulo-footer {
+    color: var(--white);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+div#conteudo-footer div#titulo-footer h2 {
+    font-size: 48px;
+}
+  
+div#conteudo-footer div#titulo-footer p {
+    font-size: 24px;
+    font-weight: 700;
+}
+  
+div#conteudo-footer form {
+    margin-top: 40px;
+    max-width: 592px;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+}
+  
+div#conteudo-footer form input {
+    font-family: Lato;
+  
+    height: 67px;
+    border-radius: 4px;
+    border: 0;
+}
+  
+div#conteudo-footer form textarea {
+    font-family: Lato;
+  
+    border-radius: 4px;
+    border: 0;
+    resize: none;
+}
+  
+div#conteudo-footer form input::placeholder, textarea::placeholder {
+    color: var(--text);
+}
+  
+div#conteudo-footer form input, textarea {
+    color: var(--title);
+}
+  
+div#conteudo-footer form input:not([type="submit"]) {
+    padding: 0 24px;
+}
+  
+div#conteudo-footer form input + input {
+    margin-top: 16px;
+}
+  
+div#conteudo-footer form textarea {
+    margin-top: 16px;
+    padding: 24px;
+}
+  
+div#conteudo-footer form input[type="submit"] {
+    margin-top: 24px;
+    background-color: var(--secondary);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+  
+    transition: 0.2s;
+}
+  
+div#conteudo-footer form input[type="submit"]:hover {
+    filter: brightness(0.8);
+}
